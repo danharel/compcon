@@ -11,4 +11,4 @@
 
 ---
 
-This wiki is mostly for the technical/development side of the project. If you want to contact me for something that's not included here (or on the itch page), feel free to contact me on Twitter at @jarena2.
+This wiki is mostly for the technical/development side of the project. If you want to contact me for something that's not included here (or on the itch page), feel free to contact me on Twitter at [@jarena2](https://twitter.com/jarena2).
