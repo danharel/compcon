@@ -22,7 +22,7 @@ Right now, a lot of the rules are correctly implemented but hidden. If a pilot's
 Mech systems (and some weapons) add or enhance combat abilities. These should be moved into a more explicit data structure so we can reason about them in the future
 
 ### Tutorial Mode
-COMP/CON should be easier to use than the rulebook, but this can be enhanced. Many Vue tutorial-builder modules exist, and COMP/CON should use one to help guide new players through the pilot and config editors. At a minimum, we should have dismissable tutorials for New Pilot, Level Pilot, and New Config (and probably also loadouts and retrofitting)
+COMP/CON should be a smoother, easier character creator than the core pdf at a minimum, but it should be easy for first-time users in the general sense. Many Vue tutorial-builder modules exist, and COMP/CON should use one to help guide new players through the pilot and config editors. At a minimum, we should have tutorials for New Pilot, Level Pilot, and New Config (and probably also loadouts and retrofitting)
 
 ### Per-Item Notes
 Users should be able to add fluff, reminders, or house rules to individual pieces of pilot gear and mech systems/weapons. This should also include things like Hardsuit and Archaic Weapon rollable descriptions.
