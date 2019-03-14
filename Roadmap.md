@@ -3,7 +3,7 @@
 The final "core" Pilot Editor feature, COMP/CON needs to allow player to print pilot and mech sheets for tabletop use. Users should have a reasonably fine degree of control as to what is printed, and how (eg. include space for notes, don't print images, etc.)
 
 ### Custom Images
-Users should be able to upload their own pilot and config images to use in COMP/CON. The only reason it's not in *right now* is because it wasn't necessarily critical -- but it absolutely is required for a 1.0 release.
+Users should be able to upload their own pilot and config images to use in COMP/CON. The only reason it's not in *right now* is because it wasn't necessarily critical for an early beta -- but it absolutely is required for a 1.0 release.
 
 ### Gear Catalogue
 LANCER has a lot of stuff, and COMP/CON giving players and GMs a tool to dig through all of it is a no-brainer (we have all the data set up already). v1 should allow users to see item lists by type and category, or by license.
