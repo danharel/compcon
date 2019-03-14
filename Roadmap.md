@@ -19,7 +19,7 @@ The first-pass implementations of features aren't particularly performant, and t
 Right now, a lot of the rules are correctly implemented but hidden. If a pilot's SYSTEMS score is contributing to a configuration's limited bonus, there should be a UI element that describes this relationship.
 
 ### Item Actions
-Mech systems (and some weapons) enhance or add new combat abilities. These should be moved into a more explicit data structure so we can reason about them in the future
+Mech systems (and some weapons) add or enhance combat abilities. These should be moved into a more explicit data structure so we can reason about them in the future
 
 ### Tutorial Mode
 COMP/CON should be easier to use than the rulebook, but this can be enhanced. Many Vue tutorial-builder modules exist, and COMP/CON should use one to help guide new players through the pilot and config editors. At a minimum, we should have dismissable tutorials for New Pilot, Level Pilot, and New Config (and probably also loadouts and retrofitting)
