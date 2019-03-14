@@ -31,7 +31,7 @@ Users should be able to add fluff, reminders, or house rules to individual piece
 Users should be able to add Pilot and Mech gear not present in the rulebook. Saving, storing, and importing/exporting these items will be a good starting point to building out the mod manager framework.
 
 ### Charts
-We have damage and range data, so we should be able to provide users with things like nice damage-at-range (and other!) charts
+We have damage and range data, so we should be able to provide users with things like nice, reactive damage-at-range (and other!) charts for their configuration loadouts
 
 ### Gear Catalogue Comparison View
 Users should be able to use the Catalogue to compare stats between two or more items. Ideally this should be an openable window for reference when building loadouts.
