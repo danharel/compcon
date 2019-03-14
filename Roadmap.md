@@ -8,6 +8,12 @@ Users should be able to upload their own pilot and config images to use in COMP/
 ### Gear Catalogue
 LANCER has a lot of stuff, and COMP/CON giving players and GMs a tool to dig through all of it is a no-brainer (we have all the data set up already). v1 should allow users to see item lists by type and category, or by license.
 
+### Style Normalization
+Readability, spacing, gutters, and colors can be improved and standardized across the whole app, making it nicer to use and setting up future styling passes.
+
+### Performance
+The first-pass implementations of features aren't particularly performant, and there are many easy saves yet to be made.
+
 ## v2
 ### Better Stat Contribution Visibility
 Right now, a lot of the rules are correctly implemented but hidden. If a pilot's SYSTEMS score is contributing to a configuration's limited bonus, there should be a UI element that describes this relationship.
