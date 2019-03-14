@@ -4,7 +4,7 @@ a player/gm toolkit for the [LANCER TTRPG by Massif Press](https://massif-press.
 ---
 
 - Download COMP/CON
-- Project Roadmap
+- [Project Roadmap](https://github.com/jarena3/compcon/wiki/Roadmap)
 - Report a Bug
 - Suggest a Feature
 - Donate
