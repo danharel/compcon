@@ -27,6 +27,9 @@ COMP/CON should be a smoother, easier character creator than the core pdf at a m
 ### Per-Item Notes
 Users should be able to add fluff, reminders, or house rules to individual pieces of pilot gear and mech systems/weapons. This should also include things like Hardsuit and Archaic Weapon rollable descriptions.
 
+### Exotic and Custom Items
+Users should be able to add Pilot and Mech gear not present in the rulebook. Saving, storing, and importing/exporting these items will be a good starting point to building out the mod manager framework.
+
 ### Charts
 We have damage and range data, so we should be able to provide users with things like nice damage-at-range (and other!) charts
 
