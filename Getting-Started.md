@@ -1,7 +1,8 @@
 Hello.
 
 First, thank you. Second, I'm sorry.
-It's a new project, built (initially) as a small thing meant for my friends, then it exploded in scope. A lot of the code in here, as of this writing, is first-blush implementation. If you see something that's nonsensical or dumb it's more than likely because it is - don't hesitate to submit a PR.
+
+COMP/CON is a new project, built (initially) as a small thing meant only for my friends (and no one but me would ever have to look inside), then it exploded in scope. A lot of the code in here, as of this writing, is first-blush implementation. If you see something that's nonsensical or dumb it's more than likely because it is - don't hesitate to submit a PR.
 
 It's (March '19) awaiting a first clean-up/refactoring effort, just a heads up.
 
