@@ -1,13 +1,13 @@
 # COMP/CON Wiki
 
-a player/gm toolkit for the [LANCER TTRPG by Massif Press](https://massif-press.itch.io/lancer-core-book)
+### a player/gm toolkit for the [LANCER TTRPG by Massif Press](https://massif-press.itch.io/lancer-core-book)
+
 ---
 
-- Download COMP/CON
+- [Download COMP/CON] (https://)
 - [Project Roadmap](https://github.com/jarena3/compcon/wiki/Roadmap)
-- Report a Bug
-- Suggest a Feature
-- Donate
+- [Report a Bug](https://goo.gl/forms/PCHR8AJWOBLdMgE32)
+- [Suggest a Feature](https://goo.gl/forms/uBTHEwWpwO6NtSbh1)
 
 ---
 
