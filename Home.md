@@ -4,7 +4,7 @@
 
 ---
 
-- [Download COMP/CON] (https://)
+- [Download COMP/CON] ()
 - [Project Roadmap](https://github.com/jarena3/compcon/wiki/Roadmap)
 - [Report a Bug](https://goo.gl/forms/PCHR8AJWOBLdMgE32)
 - [Suggest a Feature](https://goo.gl/forms/uBTHEwWpwO6NtSbh1)
