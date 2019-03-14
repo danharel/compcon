@@ -1,4 +1,4 @@
-## v1 (projected: April 8th, 2019)
+## v1 (projected: early April 2019)
 ### Printing
 The final "core" Pilot Editor feature, COMP/CON needs to allow player to print pilot and mech sheets for tabletop use. Users should have a reasonably fine degree of control as to what is printed, and how (eg. include space for notes, don't print images, etc.)
 
