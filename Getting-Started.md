@@ -7,8 +7,8 @@ COMP/CON is a new project, built (initially) as a small thing meant only for my 
 It's (March '19) awaiting a first clean-up/refactoring effort, just a heads up.
 
 In the near term, here's the stuff that needs doing:
-- ~Test Coverage~ *reggaeton triple airhorn blast*
-- Project restructuring, probably into 'Features', as lots of bigger Vue/Vuex projects are wont to do
+- Test Coverage *(reggaeton triple airhorn blast)*
+- Project restructuring, probably into a 'Features' tree, as lots of bigger Vue/Vuex projects are wont to do
 - Docs
 - Vue-related performance improvements (lazy loading, moving things out of `computed`, etc)
 
