@@ -1,4 +1,8 @@
 ## v1 (projected: early April 2019)
+
+### Readability and Style Normalization
+Font sizing and weight, spacing, gutters, and colors can be improved and standardized across the whole app, making it nicer to use and setting up future styling passes.
+
 ### Printing
 The final "core" Pilot Editor feature, COMP/CON needs to allow player to print pilot and mech sheets for tabletop use. Users should have a reasonably fine degree of control as to what is printed, and how (eg. include space for notes, don't print images, etc.)
 
@@ -7,9 +11,6 @@ Users should be able to upload their own pilot and config images to use in COMP/
 
 ### Gear Catalogue
 LANCER has a lot of stuff, and COMP/CON giving players and GMs a tool to dig through all of it is a no-brainer (we have all the data set up already). v1 should allow users to see item lists by type and category, or by license.
-
-### Style Normalization
-Readability, spacing, gutters, and colors can be improved and standardized across the whole app, making it nicer to use and setting up future styling passes.
 
 ### Performance
 The first-pass implementations of features aren't particularly performant, and there are many easy saves yet to be made.
