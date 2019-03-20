@@ -39,6 +39,9 @@ Users should be able to use the Catalogue to compare stats between two or more i
 ### LANCER Glyphs
 There are a lot of places where an icon would be useful -- damage type, manufacturer, AoE type, etc.
 
+### More Print Options
+Users should have the ability to select from a few print templates (portrait, landscape, embellished, etc) as well as printing a set of D&D-esque "Power Cards", filled in with relevant stat bonuses and system abilities.
+
 ## v3+
 
 ### Modding Tools
