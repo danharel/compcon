@@ -3,8 +3,7 @@
 ### Readability and Style Normalization
 Font sizing and weight, spacing, gutters, and colors can be improved and standardized across the whole app, making it nicer to use and setting up future styling passes.
 
-### Printing
-The final "core" Pilot Editor feature, COMP/CON needs to allow player to print pilot and mech sheets for tabletop use. Users should have a reasonably fine degree of control as to what is printed, and how (eg. include space for notes, don't print images, etc.)
+### ~Printing~ ✅
 
 ### ~Custom Images~ ✅
 
