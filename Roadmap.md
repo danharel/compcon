@@ -7,8 +7,7 @@ Font sizing and weight, spacing, gutters, and colors can be improved and standar
 
 ### ~Custom Images~ ✅
 
-### Gear Catalogue
-LANCER has a lot of stuff, and COMP/CON giving players and GMs a tool to dig through all of it is a no-brainer (we have all the data set up already). v1 should allow users to see item lists by type and category, or by license.
+### ~Gear Catalogue~ ✅
 
 ### Performance
 The first-pass implementations of features aren't particularly performant, and there are many easy saves yet to be made.
