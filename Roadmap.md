@@ -12,6 +12,9 @@ Font sizing and weight, spacing, gutters, and colors can be improved and standar
 ### Performance
 The first-pass implementations of features aren't particularly performant, and there are many easy saves yet to be made.
 
+### Code Cleanliness
+It's a fair sight better than the alpha but by no means good. COMP/CON's code should be clear, clean, and well documented so future contributors feel comfortable working with it.
+
 ## v2
 ### Better Stat Contribution Visibility
 Right now, a lot of the rules are correctly implemented but hidden. If a pilot's SYSTEMS score is contributing to a configuration's limited bonus, there should be a UI element that describes this relationship.
