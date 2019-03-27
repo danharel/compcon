@@ -1,13 +1,14 @@
-## v1 (projected: early April 2019)
-
-### Readability and Style Normalization
-Font sizing and weight, spacing, gutters, and colors can be improved and standardized across the whole app, making it nicer to use and setting up future styling passes.
-
+## v1.0 (Complete!)
 ### ~Printing~ ✅
 
 ### ~Custom Images~ ✅
 
 ### ~Gear Catalogue~ ✅
+
+## v1.5 (projected: April 2019)
+
+### Readability and Style Normalization
+Font sizing and weight, spacing, gutters, and colors can be improved and standardized across the whole app, making it nicer to use and setting up future styling passes.
 
 ### Performance
 The first-pass implementations of features aren't particularly performant, and there are many easy saves yet to be made.
@@ -15,7 +16,16 @@ The first-pass implementations of features aren't particularly performant, and t
 ### Code Cleanliness
 It's a fair sight better than the alpha but by no means good. COMP/CON's code should be clear, clean, and well documented so future contributors feel comfortable working with it.
 
+### Alternate Roster and Hangar Views
+Provide at-a-glance Roster and Config views that aren't restricted to the sidebar -- especially pretty for users who take advantage of the custom images options
+
+### LANCER GDrive Player Sheet Integration
+Integrate [ari's](twitter.com/hellwife0) importer for the [GDrive LANCER Player Sheet](https://docs.google.com/spreadsheets/d/1Tz8rbkOq9nyuIJ6bA0636dtLeN68Z5Q0yJF8cjycXxQ/edit#gid=0)
+
 ## v2
+### GIST Saves
+COMP/CON Save Data is small. We should be able to update it to a gist as a kind of ad-hoc "cloud storage". Trade pilots and configurations by sending someone an ID. COMP/CON handles the rest.
+
 ### Better Stat Contribution Visibility
 Right now, a lot of the rules are correctly implemented but hidden. If a pilot's SYSTEMS score is contributing to a configuration's limited bonus, there should be a UI element that describes this relationship.
 
