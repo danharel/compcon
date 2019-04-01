@@ -19,8 +19,7 @@ It's a fair sight better than the alpha but by no means good. COMP/CON's code sh
 ### Alternate Roster and Hangar Views
 Provide at-a-glance Roster and Config views that aren't restricted to the sidebar -- especially pretty for users who take advantage of the custom images options
 
-### LANCER GDrive Player Sheet Integration
-Integrate [ari's](twitter.com/hellwife0) importer for the [GDrive LANCER Player Sheet](https://docs.google.com/spreadsheets/d/1Tz8rbkOq9nyuIJ6bA0636dtLeN68Z5Q0yJF8cjycXxQ/edit#gid=0)
+### ~LANCER GDrive Player Sheet Integration~ ✅
 
 ## v2
 ### GIST Saves
