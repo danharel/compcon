@@ -186,7 +186,7 @@ Mech Weapons can be added to existing licenses, custom licenses, or the GMS base
       "val": 15
     }],
     "tags": [    // see "Tags" section at the bottom of this document. Cam be left blank ([])
-      {"id": "unique}
+      {"id": "unique"}
     ],
     "source": "MHM",    // the ID of the manufacturer. Must match exactly.
     "license": "TANGUN",   // the NAME of the frame this weapon is associated with. Must match exactly.
