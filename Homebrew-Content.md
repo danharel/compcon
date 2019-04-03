@@ -112,7 +112,9 @@ Frames are the basis for all LANCER, and thus COMP/CON, licenses. With the excep
       "tech_attack": -2,
       "save": 10,
       "speed": 3,
-      "sp": 5
+      "sp": 5,
+      "structuremod": 0,    // adds value to Structure. NOT required.
+      "stressmod": 0    // adds value to reactor stress. NOT required.
     },
     "traits": [{
         "name": "Trait 1 Name",
