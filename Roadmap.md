@@ -25,6 +25,9 @@ Provide at-a-glance Roster and Config views that aren't restricted to the sideba
 ### GIST Saves
 COMP/CON Save Data is small. We should be able to update it to a gist as a kind of ad-hoc "cloud storage". Trade pilots and configurations by sending someone an ID. COMP/CON handles the rest.
 
+### Imgur-hosted Pilot and Mech art
+Users should be able to, as an option, upload their custom artwork via COMP/CON so that when Pilots and Configurations are shared, the recipients don't have to do any more work to see the associated art. This can be done via the imgur API, automated by COMP/CON
+
 ### Better Stat Contribution Visibility
 Right now, a lot of the rules are correctly implemented but hidden. If a pilot's SYSTEMS score is contributing to a configuration's limited bonus, there should be a UI element that describes this relationship.
 
