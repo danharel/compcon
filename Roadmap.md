@@ -5,21 +5,27 @@
 
 ### ~Gear Catalogue~ ✅
 
-## v1.5 (projected: April 2019)
+## v1.2 (projected: April 2019)
 
 ### Readability and Style Normalization
 Font sizing and weight, spacing, gutters, and colors can be improved and standardized across the whole app, making it nicer to use and setting up future styling passes.
-
-### Performance
-The first-pass implementations of features aren't particularly performant, and there are many easy saves yet to be made.
-
-### Code Cleanliness
-It's a fair sight better than the alpha but by no means good. COMP/CON's code should be clear, clean, and well documented so future contributors feel comfortable working with it.
 
 ### Alternate Roster and Hangar Views
 Provide at-a-glance Roster and Config views that aren't restricted to the sidebar -- especially pretty for users who take advantage of the custom images options
 
 ### ~LANCER GDrive Player Sheet Integration~ ✅
+
+### ~Homebrew and Content Package Importer~ ✅
+
+### Expanded Compendium
+The Compendium should serve as an in-app reference for users who like to keep COMP/CON open as they play.
+
+## v1.5
+### Performance
+The first-pass implementations of features aren't particularly performant, and there are many easy saves yet to be made.
+
+### Code Cleanliness
+It's a fair sight better than the alpha but by no means good. COMP/CON's code should be clear, clean, and well documented so future contributors feel comfortable working with it.
 
 ## v2
 ### GIST Saves
@@ -57,6 +63,9 @@ Users should have the ability to select from a few print templates (portrait, la
 
 ## v3+
 
+### Active Mode
+COMP/CON should accommodate users who want to use the app for active play: activating a pilot should lock free editing, but allow for tracking damage, heat, repairs, limited usage, dice rolling, &c. A user should be able to rely on the app as a digital player sheet, not just a printable generator.
+
 ### Modding Tools
 COMP/CON should include a full-featured license editor, so users could add homebrew frames and items. It should also be easy to group these licenses into packages, import/export these packages, and enable or disable their use when creating pilots and configurations
 
@@ -65,4 +74,4 @@ Building enemy combatants/NPCs is nearly as involved as building pilots. Likewis
 
 Additionally, there are plenty of generators in the rulebook that could be trivially ported to COMP/CON (eg: planet generator, resource tables, mission profiles
 
-Far-future GM tools could include things like dice rollers, initiative trackers, campaign logs/wikis, and faction trackers.
+Far-future GM tools could include things like initiative trackers, campaign logs/wikis, and faction trackers.
