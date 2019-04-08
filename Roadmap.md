@@ -5,7 +5,7 @@
 
 ### ~Gear Catalogue~ ✅
 
-## v1.2 (projected: April 2019)
+## v1.2 (Complete!)
 
 ### ~Alternate Roster and Hangar Views~ ✅
 
