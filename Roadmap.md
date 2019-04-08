@@ -7,18 +7,11 @@
 
 ## v1.2 (projected: April 2019)
 
-### Readability and Style Normalization
-Font sizing and weight, spacing, gutters, and colors can be improved and standardized across the whole app, making it nicer to use and setting up future styling passes.
-
-### Alternate Roster and Hangar Views
-Provide at-a-glance Roster and Config views that aren't restricted to the sidebar -- especially pretty for users who take advantage of the custom images options
+### ~Alternate Roster and Hangar Views~ ✅
 
 ### ~LANCER GDrive Player Sheet Integration~ ✅
 
 ### ~Homebrew and Content Package Importer~ ✅
-
-### Expanded Compendium
-The Compendium should serve as an in-app reference for users who like to keep COMP/CON open as they play.
 
 ## v1.5
 ### Performance
@@ -26,6 +19,12 @@ The first-pass implementations of features aren't particularly performant, and t
 
 ### Code Cleanliness
 It's a fair sight better than the alpha but by no means good. COMP/CON's code should be clear, clean, and well documented so future contributors feel comfortable working with it.
+
+### Expanded Compendium
+The Compendium should serve as an in-app reference for users who like to keep COMP/CON open as they play.
+
+### Improved UI
+Font sizing and weight, spacing, gutters, and colors can be improved and standardized across the whole app, making it nicer to use and setting up future styling passes.
 
 ## v2
 ### GIST Saves
