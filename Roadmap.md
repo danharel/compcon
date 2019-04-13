@@ -34,7 +34,7 @@ COMP/CON Save Data is small. We should be able to update it to a gist as a kind 
 Users should be able to, as an option, upload their custom artwork via COMP/CON so that when Pilots and Configurations are shared, the recipients don't have to do any more work to see the associated art. This can be done via the imgur API, automated by COMP/CON
 
 ### Better Stat Contribution Visibility
-Right now, a lot of the rules are correctly implemented but hidden. If a pilot's SYSTEMS score is contributing to a configuration's limited bonus, there should be a UI element that describes this relationship.
+Right now, a lot of the rules are correctly implemented but hidden. If a pilot's ENGINEERING score is contributing to a configuration's limited bonus, there should be a UI element that describes this relationship.
 
 ### Item Actions
 Mech systems (and some weapons) add or enhance combat abilities. These should be moved into a more explicit data structure so we can reason about them in the future -- and do things like offer a DnD4e-style "Action Card" print format
