@@ -5,7 +5,7 @@ A good working example of custom data can be found [here](https://github.com/jar
 
 An empty set of datafiles has been created for your convienience [here](https://github.com/jarena3/compcon-extra/tree/master/Blank)
 
-If there are any questions, please find me in the `#resource-hub` channel on the official LANCER Discord
+If there are any questions, please find me in the `#comp-con` channel on the official LANCER Discord (ping @beeftime or @comp/con dev)
 
 ## Adding Content to COMP/CON
 LANCER organizes everything by licenses that correspond to Frames. COMP/CON's upcoming content editor UI will do this too, but the actual guts of the app group everything by type (weapon, system, tag, etc) and collect and organize everything as the need arises, most often by a unique `id` attribute for any given thing. The types of things COMP/CON stores as data (and, because of this, the stuff you can add) includes:
