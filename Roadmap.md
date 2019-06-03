@@ -23,11 +23,9 @@
 ### ~Improved UI~ ✅
 
 ## v1.4
-### GIST Saves
-COMP/CON Save Data is small. We should be able to update it to a gist as a kind of ad-hoc "cloud storage". Trade pilots and configurations by sending someone an ID. COMP/CON handles the rest.
+### ~GIST Saves~ ✅
 
-### Imgur-hosted Pilot and Mech art
-Users should be able to, as an option, upload their custom artwork via COMP/CON so that when Pilots and Configurations are shared, the recipients don't have to do any more work to see the associated art. This can be done via the imgur API, automated by COMP/CON
+### ~Imgur-hosted Pilot and Mech art~ ✅
 
 ### Per-Item Notes
 Users should be able to add fluff, reminders, or house rules to individual pieces of pilot gear and mech systems/weapons. This should also include things like Hardsuit and Archaic Weapon rollable descriptions.
