@@ -58,6 +58,9 @@ Users should have the ability to select from a few print templates (portrait, la
 
 ## v2+
 
+### Mobile Versions
+COMP/CON should offer an Android/iOS tablet version with the same features as the desktop app. It should also have a phone app for the same OSes, although some features might be restricted due to reduced screen sizes.
+
 ### Modding Tools
 COMP/CON should include a full-featured license editor, so users could add homebrew frames and items. It should also be easy to group these licenses into packages, import/export these packages, and enable or disable their use when creating pilots and configurations
 
