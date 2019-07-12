@@ -1,19 +1,12 @@
+## v1.5
+### ~Active Mode~ (v1) ✅
 
-## v1.4
-### ~Cloud Saves~ ✅
+### ~NPC Designer~ (v1) ✅
 
-### ~Cloud-hosted Pilot and Mech art~ ✅
-
-### ~Per-Item Notes~ ✅
-
-### ~Better Stat Contribution Visibility~ ✅
+### ~Encounter Runner~ (v1) ✅
 
 ### More LANCER Glyphs
 More custom LANCER Glyphs
-
-## v1.5
-### Active Mode
-COMP/CON needs to be able to run games of LANCER, both on the GM side and the player side. Active Mode should present an easy way for players to track mech stats, equipment state and usage, and turn progress.
 
 ### Tutorial Mode
 COMP/CON should be a smoother, easier character creator than the core pdf at a minimum, but it should be easy for first-time users in the general sense. Many Vue tutorial-builder modules exist, and COMP/CON should use one to help guide new players through the pilot and config editors. At a minimum, we should have tutorials for New Pilot, Level Pilot, and New Config (and probably also loadouts and retrofitting)
@@ -78,3 +71,12 @@ Far-future GM tools could include things like initiative trackers, campaign logs
 ### ~Expanded Compendium~ ✅
 
 ### ~Improved UI~ ✅
+
+## v1.4
+### ~Cloud Saves~ ✅
+
+### ~Cloud-hosted Pilot and Mech art~ ✅
+
+### ~Per-Item Notes~ ✅
+
+### ~Better Stat Contribution Visibility~ ✅
