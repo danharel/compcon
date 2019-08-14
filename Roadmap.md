@@ -1,20 +1,24 @@
-## v1.5
-### ~Active Mode~ (v1) ✅
+## Soon
+### LANCER Styling
+COMP/CON should maintain the visual styles of LANCER, and so requires a UI overhaul to bring it in line with the core book.
 
-### ~NPC Designer~ (v1) ✅
-
-### ~Encounter Runner~ (v1) ✅
-
-### More LANCER Glyphs
-More custom LANCER Glyphs
-
-### Tutorial Mode
-COMP/CON should be a smoother, easier character creator than the core pdf at a minimum, but it should be easy for first-time users in the general sense. Many Vue tutorial-builder modules exist, and COMP/CON should use one to help guide new players through the pilot and config editors. At a minimum, we should have tutorials for New Pilot, Level Pilot, and New Config (and probably also loadouts and retrofitting)
+### Better Cloud Saves
+Add simple, intuitive tools for updating your characters in the cloud, as well as pulling updates from shared characters. The status of the character (in relation to you as a user) should be reflected in the UI
 
 ### Charts
 We have damage and range data, so we should be able to provide users with things like nice, reactive damage-at-range (and other!) charts for their mech loadouts
 
-## v1.6
+### Localization
+The LANCER data and C/C UI content can be broken out into an external resource, which can then be used to power a crowdsourced localization effort.
+
+### NPC and Encounter Printing
+
+### Better Pilot/Mech/NPC Image UI
+
+### Tutorial Mode
+COMP/CON should be a smoother, easier character creator than the core pdf at a minimum, but it should be easy for first-time users in the general sense. Many Vue tutorial-builder modules exist, and COMP/CON should use one to help guide new players through the pilot and config editors. At a minimum, we should have tutorials for New Pilot, Level Pilot, and New Config (and probably also loadouts and retrofitting)
+
+### Templated Pilot Creation Option
 
 ### Gear Catalogue Comparison View
 Users should be able to use the Catalogue to compare stats between two or more items. Ideally this should be an openable window for reference when building loadouts.
@@ -28,7 +32,7 @@ Users should be able to add Pilot and Mech gear not present in the rulebook. Sav
 ### Item Actions
 Mech systems (and some weapons) add or enhance combat abilities. These should be moved into a more explicit data structure so we can reason about them in the future -- and do things like offer a DnD4e-style "Action Card" print format
 
-## v2+
+## Later
 
 ### Mobile Versions
 COMP/CON should offer an Android/iOS tablet version with the same features as the desktop app. It should also have a phone app for the same OSes, although some features might be restricted due to reduced screen sizes.
@@ -48,14 +52,11 @@ Far-future GM tools could include things like initiative trackers, campaign logs
 
 # Archive
 
-## v1.0 (Complete!)
 ### ~Printing~ ✅
 
 ### ~Custom Images~ ✅
 
 ### ~Gear Catalogue~ ✅
-
-## v1.2 (Complete!)
 
 ### ~Alternate Roster and Hangar Views~ ✅
 
@@ -63,7 +64,6 @@ Far-future GM tools could include things like initiative trackers, campaign logs
 
 ### ~Homebrew and Content Package Importer~ ✅
 
-## v1.3 (Complete!)
 ### ~Performance~ ✅
 
 ### ~Code Cleanliness~ ✅
@@ -72,7 +72,6 @@ Far-future GM tools could include things like initiative trackers, campaign logs
 
 ### ~Improved UI~ ✅
 
-## v1.4
 ### ~Cloud Saves~ ✅
 
 ### ~Cloud-hosted Pilot and Mech art~ ✅
@@ -80,3 +79,11 @@ Far-future GM tools could include things like initiative trackers, campaign logs
 ### ~Per-Item Notes~ ✅
 
 ### ~Better Stat Contribution Visibility~ ✅
+
+### ~Active Mode~ (v1) ✅
+
+### ~NPC Designer~ (v1) ✅
+
+### ~Encounter Runner~ (v1) ✅
+
+### ~More LANCER Glyphs~ ✅
