@@ -5,7 +5,7 @@
 ---
 
 - [Download COMP/CON](https://beeftime.itch.io/compcon)
-- [Project Roadmap](https://github.com/jarena3/compcon/wiki/Roadmap)
+- [Project Roadmap](https://github.com/massif-press/compcon/issues?q=is%3Aissue+is%3Aopen+label%3Aroadmap)
 - [Report a Bug](https://goo.gl/forms/PCHR8AJWOBLdMgE32)
 - [Suggest a Feature](https://goo.gl/forms/uBTHEwWpwO6NtSbh1)
 
