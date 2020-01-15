@@ -30,7 +30,7 @@ Due to web limitations, images in content packs (namely: your pack's main image,
 ```json
 {
     "name": "My Homebrew",
-    "author": "Ati",
+    "author": "Ari",
     "description": "This is my homebrew.",
     "version": "0.0.1",
     "image_url": "https://images.com/optional-image.png",
