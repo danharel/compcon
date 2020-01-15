@@ -1,7 +1,7 @@
 **_NOTE: THIS PAGE IS A WORK IN PROGRESS AND IS BEING REWRITTEN TO ACCOMODATE THE NEW V2 HOMEBREW STRUCTURE_**
 # Basics
 A UI-based homebrew editor is not yet available in COMP/CON, but you can already create homebrew content if you're willing to work with JSON.
-COMP/CON loads homebrew from `.LCP` (Lancer Content Pack) archives, which are actually just `.ZIP` files with their extension changed. It looks inside the archive for specific `.JSON` files which contain the actual data. The archive **MUST** contain a `lcp_manifest.json` file, which contains metadata for the package. The files it looks for data in are as follows, and their contents should be obvious from the name:
+COMP/CON loads homebrew from `.LCP` (Lancer Content Pack) archives, which are actually just `.ZIP` files with their extension changed. It looks inside the archive for specific `.JSON` files which contain the actual data. The archive **MUST** contain a `lcp_manifest.json` file with its required contents, which contains metadata for the package. The files it looks for data in are as follows, and their contents should be obvious from the name:
 * [`manufacturers.json` (Manufacturers)](#manufacturers-manufacturersjson)
 * [`core_bonus.json` (Core Bonuses)](#core-bonuses-core_bonusjson)
 * [`frames.json` (FRAMEs)](#frames-framesjson)
@@ -25,6 +25,7 @@ To use the extension, make sure you're working in an **EMPTY FOLDER**, and creat
 Due to web limitations, images in content packs (namely: your pack's main image, manufacturer logos, and frame images) can only be referenced via a URL for an image hosted on the Internet. Make sure the place where you choose to host your images will be around for a while.
 
 # Details
+## Manifest (`lcp_manifest.json`)
 ## Manufacturers (`manufacturers.json`)
 ## Core Bonuses (`core_bonus.json`)
 ## FRAMEs (`frames.json`)
