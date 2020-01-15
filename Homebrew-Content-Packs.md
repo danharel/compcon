@@ -12,7 +12,7 @@ COMP/CON loads homebrew from `.LCP` (Lancer Content Pack) archives, which are ac
 * [`talents.json` (Pilot talents)](#pilot-talents-talentsjson)
 * [`tags.json` (Equipment tags)](#equipment-tags-tagsjson)
 * [`npc_classes.json` (NPC classes)](#npc-classes-npc_classesjson)
-* [`npc_features.json` (NPC features (systems, traits, etc.))](#npc-features-(systems-traits-etc)-npc_featuresjson)
+* [`npc_features.json` (NPC features (systems, traits, etc.))](#npc-features-systems-traits-etc-npc_featuresjson)
 * [`npc_templates.json` (NPC templates)](#npc-templates-npc_templatesjson)
 
 ## The VSCode extension
