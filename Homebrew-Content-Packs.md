@@ -2,18 +2,18 @@
 # Basics
 A UI-based homebrew editor is not yet available in COMP/CON, but you can already create homebrew content if you're willing to work with JSON.
 COMP/CON loads homebrew from `.LCP` (Lancer Content Pack) archives, which are actually just `.ZIP` files with their extension changed. It looks inside the archive for specific `.JSON` files which contain the actual data. The archive **MUST** contain a `lcp_manifest.json` file, which contains metadata for the package. The files it looks for data in are as follows, and their contents should be obvious from the name:
-* `manufacturers.json`
-* `core_bonus.json`
-* `frames.json`
-* `weapons.json`
-* `systems.json`
-* `mods.json`
-* `pilot_gear.json`
-* `talents.json`
-* `tags.json`
-* `npc_classes.json`
-* `npc_features.json`
-* `npc_templates.json`
+* [`manufacturers.json` (Manufacturers)](#manufacturers-manufacturersjson)
+* [`core_bonus.json` (Core Bonuses)](#core-bonuses-core_bonusjson)
+* [`frames.json` (FRAMEs)](#frames-framesjson)
+* [`weapons.json` (Mech weapons)](#mech-weapons-weaponsjson)
+* [`systems.json` (Mech systems)](#mech-systems-systemsjson)
+* [`mods.json` (Mech weapon mods)](#mech-weapon-mods-modsjson)
+* [`pilot_gear.json` (Pilot gear, armor, and weapons)](#pilot-gear-armor-and-weapons-pilot_gearjson)
+* [`talents.json` (Pilot talents)](#pilot-talents-talentsjson)
+* [`tags.json` (Equipment tags)](#equipment-tags-tagsjson)
+* [`npc_classes.json` (NPC classes)](#npc-classes-npc_classesjson)
+* [`npc_features.json` (NPC features (systems, traits, etc.))](#npc-features-(systems-traits-etc)-npc_featuresjson)
+* [`npc_templates.json` (NPC templates)](#npc-templates-npc_templatesjson)
 
 ## The VSCode extension
 
