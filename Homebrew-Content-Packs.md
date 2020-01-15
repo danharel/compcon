@@ -17,7 +17,7 @@ COMP/CON loads homebrew from `.LCP` (Lancer Content Pack) archives, which are ac
 
 ## The VSCode extension
 
-To make creating homebrew content packs as easy as possible, you should use [Visual Studio Code](https://code.visualstudio.com/) combined with the [COMP/CON Content Authoring extension](https://marketplace.visualstudio.com/items?itemName=massif-press.comp-con-content-authoring). VSCode provides JSON validation by default to catch syntax errors, and the extension provides data validation, autocomplete, and a task to rapidly create the .LCP archive from your source code.
+To make creating homebrew content packs as easy as possible, you should use the [Visual Studio Code](https://code.visualstudio.com/) text editor combined with the [COMP/CON Content Authoring extension](https://marketplace.visualstudio.com/items?itemName=massif-press.comp-con-content-authoring). VSCode provides JSON validation by default to catch syntax errors, and the extension provides data validation, autocomplete, and a task to rapidly create the .LCP archive from your source code.
 
 To use the extension, make sure you're working in an **EMPTY FOLDER**, and create an `lcp_manifest.json` file inside of it. The extension should activate once it detects the manifest file. To run the build task, first, if you're on Windows, make sure you have 7zip installed - Mac and Linux should work right away (uses `zip` tool). Press `Ctrl+Shift+P`, and search for `Tasks: Run Build Task`. You should see a `compcon: Build .LCP package` option - select it and your .LCP file should rapidly build itself.
 
