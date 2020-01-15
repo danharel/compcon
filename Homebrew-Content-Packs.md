@@ -39,10 +39,10 @@ Due to web limitations, images in content packs (namely: your pack's main image,
 ```
 * **`name`**: The name of your homebrew package.
 * **`author`**: Your name or your group's name.
-* **`description`**: An optional description of your homebrew package.
+* **`description`** _(optional)_: A description of your homebrew package.
 * **`version`**: A version identifier for the current iteration of your homebrew. Can technically be any string, but it's recommended to use numerical-style versions for clarity.
-* **`image_url`**: An external URL to an image representing your homebrew package. Optional, but recommended for recognizability.
-* **`website`**: An optional link to a website representing your homebrew package, or any site you want really. Just try not to give anyone a virus.
+* **`image_url`** _(optional)_: An external URL to an image representing your homebrew package. Optional, but recommended for recognizability.
+* **`website`** _(optional)_: A link to a website representing your homebrew package, or any site you want really. Just try not to give anyone a virus.
 
 **COMP/CON uses the `name` and `author` fields in combination to identify whether the homebrew package is already installed and perform and update rather than an install.** Refrain from changing these in updates for a better user experience.
 
