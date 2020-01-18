@@ -59,7 +59,7 @@ An array of objects containing each manufacturer's data.
         "color": "#000000",
         "description": "My manufacturer fluff",
         "quote": "<i>A quote</i>",
-        "logo": "MF",
+        "logo": "mf",
         "logo_url": "https://example.com/image.png"
     }
 ]
@@ -72,7 +72,26 @@ An array of objects containing each manufacturer's data.
 * **`logo_url`** _(optional)_: An external URL to an image representing your manufacturer. Optional but recommended.
 
 ## Core Bonuses (`core_bonus.json`)
+### Structure
+An array of objects containing each core bonus's data.
+```json
+[
+    {
+        "name": "My Core Bonus",
+        "source": "mf",
+        "description": "Fluff for your core bonus",
+        "effect": "The mechanical effect of the core bonus"
+    }
+]
+```
+* **`name`**: The name of the core bonus.
+* **`source`**: The `logo` property of the manufacturer that provides the core bonus. If `GMS`, it will be available without license requirements.
+* **`description`**: Fluff for your core bonus.
+* **`effect`**: The mechanical effect of the core bonus.
+
 ## FRAMEs (`frames.json`)
+
+
 ## Mech weapons (`weapons.json`)
 ## Mech systems (`systems.json`)
 ## Mech weapon mods (`mods.json`)
