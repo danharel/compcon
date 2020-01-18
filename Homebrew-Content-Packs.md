@@ -32,6 +32,7 @@ Due to web limitations, images in content packs (namely: your pack's main image,
     "name": "My Homebrew",
     "author": "Ari",
     "description": "This is my homebrew.",
+    "item_prefix": "prefix",
     "version": "0.0.1",
     "image_url": "https://images.com/optional-image.png",
     "website": "https://optional-website.com"
@@ -40,6 +41,7 @@ Due to web limitations, images in content packs (namely: your pack's main image,
 * **`name`**: The name of your homebrew package.
 * **`author`**: Your name or your group's name.
 * **`description`** _(optional)_: A description of your homebrew package.
+* **`item_prefix`**: A prefix used to generate your homebrew items' internal IDs. These IDs are how the items are stored in pilot data, so make sure you're happy with your prefix and **do NOT change it after releasing your homebrew to the public**, else people's saves will break.
 * **`version`**: A version identifier for the current iteration of your homebrew. Can technically be any string, but it's recommended to use numerical-style versions for clarity.
 * **`image_url`** _(optional)_: An external URL to an image representing your homebrew package. Optional, but recommended for recognizability.
 * **`website`** _(optional)_: A link to a website representing your homebrew package, or any site you want really. Just try not to give anyone a virus.
