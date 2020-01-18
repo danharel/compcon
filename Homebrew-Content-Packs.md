@@ -27,6 +27,7 @@ Due to web limitations, images in content packs (namely: your pack's main image,
 # Details
 ## Manifest (`lcp_manifest.json`)
 ### Structure
+A single JSON object containing metadata about your content package.
 ```json
 {
     "name": "My Homebrew",
@@ -49,6 +50,27 @@ Due to web limitations, images in content packs (namely: your pack's main image,
 **COMP/CON uses the `name` and `author` fields in combination to identify whether the homebrew package is already installed and perform and update rather than an install.** Refrain from changing these in updates for a better user experience.
 
 ## Manufacturers (`manufacturers.json`)
+### Structure
+An array of objects containing each manufacturer's data.
+```json
+[
+    {
+        "name": "Manufacturer Name",
+        "color": "#000000",
+        "description": "My manufacturer fluff",
+        "quote": "<i>A quote</i>",
+        "logo": "MF",
+        "logo_url": "https://example.com/image.png"
+    }
+]
+```
+* **`name`**: The manufacturer's name.
+* **`color`**: The color that represents your manufacturer, in hex with the leading number sign.
+* **`description`**: **(Accepts HTML)** Long-form fluff about your manufacturer.
+* **`quote`**: **(Accepts HTML)** A pithy quote representing manufacturer, such as _"SUPERIOR BY DESIGN"_.
+* **`logo`**: **(⚠️ THIS PROPERTY'S NAME WILL BE CHANGED BEFORE V2.0)** An initialism or other short name for your manufacturer, eg _GMS_, _IPS-N_. (The property name is misleading, but will be changed to something more appropriate before v2 release.)
+* **`logo_url`** _(optional)_: An external URL to an image representing your manufacturer. Optional but recommended.
+
 ## Core Bonuses (`core_bonus.json`)
 ## FRAMEs (`frames.json`)
 ## Mech weapons (`weapons.json`)
