@@ -55,20 +55,20 @@ An array of objects containing each manufacturer's data.
 ```json
 [
     {
+        "id": "MFR",
         "name": "Manufacturer Name",
         "color": "#000000",
         "description": "My manufacturer fluff",
         "quote": "<i>A quote</i>",
-        "logo": "mf",
         "logo_url": "https://example.com/image.png"
     }
 ]
 ```
+* **`id`**: An initialism or other short name for your manufacturer, eg `GMS`, `IPS-N`. Will be referenced by licensed items such as weapons, and is **CASE-SENSITIVE**.
 * **`name`**: The manufacturer's name.
 * **`color`**: The color that represents your manufacturer, in hex with the leading number sign.
 * **`description`**: **(Accepts HTML)** Long-form fluff about your manufacturer.
 * **`quote`**: **(Accepts HTML)** A pithy quote representing manufacturer, such as _"SUPERIOR BY DESIGN"_.
-* **`logo`**: **(⚠️ THIS PROPERTY'S NAME WILL BE CHANGED BEFORE V2.0)** An initialism or other short name for your manufacturer, eg _GMS_, _IPS-N_. (The property name is misleading, but will be changed to something more appropriate before v2 release.)
 * **`logo_url`** _(optional)_: An external URL to an image representing your manufacturer. Optional but recommended.
 
 ## Core Bonuses (`core_bonus.json`)
