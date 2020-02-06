@@ -138,7 +138,7 @@ All three kinds of pilot gear must be included together in the `pilot_gear.json`
 * **`tags`**: A list of the tags for the gear. Each tag begins with a `{` and ends with a `}`. For more information, see [On Equipment Tags](#on-equipment-tags).
   * **`id`**: The identifying string for the tag. The tag id's for the Core book tags follow the format `tg_tag_name` - the name is converted to lower case, punctuation removed, and spaces replaced with `_`.
   * **`val`** _(optional)_: For tags that take a value, like Reliable, this is the value that gets inserted into the tag name/description.
-* **`uses`**: The number of limited uses for the piece of gear. This is currently required, but may be made redundant in favor of using the Limited tag. Must be a number. (i.e. `1`, not `"1"` or `'1'`.)
+* **`uses`** _(optional)_: The number of limited uses for the piece of gear. This is currently required, but may be made redundant in favor of using the Limited tag. Must be a number. (i.e. `1`, not `"1"` or `'1'`.)
 
 ### Pilot armor
 ```json
