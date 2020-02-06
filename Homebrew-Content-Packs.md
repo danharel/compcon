@@ -94,7 +94,7 @@ An array of objects containing each core bonus's data.
 ]
 ```
 * **`name`**: The name of the core bonus.
-* **`source`**: The `logo` property of the manufacturer that provides the core bonus. If `GMS`, it will be available without license requirements.
+* **`source`**: The `id` property of the manufacturer that provides the core bonus. If `GMS`, it will be available without license requirements.
 * **`description`**: **(Accepts HTML)** Fluff for your core bonus.
 * **`effect`**: **(Accepts HTML)** The mechanical effect of the core bonus.
 
