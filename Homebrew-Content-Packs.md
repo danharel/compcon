@@ -25,6 +25,14 @@ To use the extension, make sure you're working in an **EMPTY FOLDER**, create an
 ## A note about images
 Due to web limitations, images in content packs (namely: your pack's main image, manufacturer logos, and frame images) can only be referenced via a URL for an image hosted on the Internet. Make sure the place where you choose to host your images will be around for a while.
 
+## HORUS text
+Comp/Con has a few special text effects, mostly for HORUS-style flavor. You can include these in fields noted with **(Accepts HTML)** by wrapping the desired text with one of these sets of tags:
+```html
+<code class="horus">Blah blah blah</code>
+<span class="horus--subtle">Blah blah blah</span>
+<span class="ra-quiet">Blah blah blah</span>
+```
+
 # Details
 ## Manifest (`lcp_manifest.json`)
 ### Structure
@@ -87,8 +95,8 @@ An array of objects containing each core bonus's data.
 ```
 * **`name`**: The name of the core bonus.
 * **`source`**: The `logo` property of the manufacturer that provides the core bonus. If `GMS`, it will be available without license requirements.
-* **`description`**: Fluff for your core bonus.
-* **`effect`**: The mechanical effect of the core bonus.
+* **`description`**: **(Accepts HTML)** Fluff for your core bonus.
+* **`effect`**: **(Accepts HTML)** The mechanical effect of the core bonus.
 
 ## FRAMEs (`frames.json`)
 
@@ -97,8 +105,93 @@ An array of objects containing each core bonus's data.
 ## Mech systems (`systems.json`)
 ## Mech weapon mods (`mods.json`)
 ## Pilot gear, armor, and weapons (`pilot_gear.json`)
+### Pilot gear
+### Pilot armor
+### Pilot weapons
+```json
+[
+  {
+    "name": "My Pilot Weapon",
+    "type": "weapon",
+    "description": "Fluff and/or mechanical effects of the weapon.",
+    "tags": [
+      {
+        "id": "tg_tag_id"
+      },
+      {
+        "id": "tg_other_tag_id",
+        "val": 1
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 5
+      }
+    ],
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": 2
+      }
+    ]
+  }
+]
+```
+* **`name`**: The name of the pilot weapon.
+* **`type`**: Weapons must have `Weapon` in this property.
+* **`description`**: **(Accepts HTML)** Fluff and/or mechanical effects for your talent.
+* **`tags`**: A list of the tags for the weapon. Each tag begins with a `{` and ends with a `}`.
+  * **`id`**: The identifying string for the tag. The tag id's for the Core book tags follow the format `tg_tag_name` - the name is converted to lower case, punctuation removed, and spaces replaced with `_`.
+  * **`val`** _(optional)_: For tags that take a value, like Reliable, this is the value that gets inserted into the tag name/description.
+* **`range`**: A list of the range types for the weapon. Each type begins with a `{` and ends with a `}`. The example above will render as having Range 5.
+  * **`type`**: The type of range. Must be one of `Range`, `Threat`, `Line`, `Cone`, `Blast`, or `Burst`.
+  * **`val`**: The range for this type.
+* **`damage`**: A list of the damage types for the weapon. Each type begins with a `{` and ends with a `}`. The example above will render as doing 2 kinetic damage.
+  * **`type`**: The type of damage. Must be one of `kinetic`, `explosive`, `energy`, `burn`, or `variable`. `variable` is what is used on the Signature weapons from the Core book - in the future this type will allow the user to select what type of damage the weapon will do.
+  * **`val`**: The amount of damage for this type. Can either be a number (as shown above), or a string (for example, `1d6`).
+
 ## Pilot talents (`talents.json`)
+```json
+[
+  {
+    "name": "MY TALENT",
+    "description": "Fluff for your talent.",
+    "ranks": [
+      {
+        "name": "RANK 1 NAME",
+        "description": "Mechanical effect of rank 1."
+      },
+      {
+        "name": "RANK 2 NAME",
+        "description": "Mechanical effect of rank 2."
+      },
+      {
+        "name": "RANK 3 NAME",
+        "description": "Mechanical effect of rank 3."
+      }
+    ]
+  }
+]
+```
+* **`name`**: The name of the talent.
+* **`description`**: **(Accepts HTML)** Fluff for your talent.
+* **`ranks`**: A list of the ranks of the talent. Comp/Con requires there to be exactly 3 ranks.
+  * **`name`**: The name of the talent rank.
+  * **`description`**: **(Accepts HTML)** The mechanical effect of the talent rank.
+
 ## Equipment tags (`tags.json`)
+```json
+[
+  {
+    "name": "MY TAG {VAL}",
+    "description": "Mechanical effects of the tag, which does {VAL} amount of something."
+  }
+]
+```
+* **`name`**: The name of the tag. The `{VAL}` is optional, and is for tags like Reliable which have an associated value. In those cases, `{VAL}` gets replaced with the value of the tag.
+* **`description`**: **(Accepts HTML)** Mechanical effect of the tag. Again, `{VAL}` is optional and is treated the same as in `name`.
+
 ## NPC classes (`npc_classes.json`)
 ## NPC features (systems, traits, etc.) (`npc_features.json`)
 ## NPC templates (`npc_templates.json`)
