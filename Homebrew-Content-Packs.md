@@ -33,6 +33,11 @@ Comp/Con has a few special text effects, mostly for HORUS-style flavor. You can 
 <span class="ra-quiet">Blah blah blah</span>
 ```
 
+## On Equipment Tags
+Every tag has an identifying string - and `id` - which can be applied to other items (frames, equipment, weapons, etc...). Any item which can have tags applied has a `tags` property.
+
+The tag id's for the Core book tags follow the format `tg_tag_name` - the name is converted to lower case, punctuation removed, and spaces replaced with `_`. To see the id's of all tags from the core book, see [tags.json](https://github.com/massif-press/lancer-data/blob/master/lib/tags.json) in the lancer-data repo.
+
 # Details
 ## Manifest (`lcp_manifest.json`)
 ### Structure
@@ -105,21 +110,78 @@ An array of objects containing each core bonus's data.
 ## Mech systems (`systems.json`)
 ## Mech weapon mods (`mods.json`)
 ## Pilot gear, armor, and weapons (`pilot_gear.json`)
+All three kinds of pilot gear must be included together in the `pilot_gear.json` file. The file must begin with `[` and end with `]`.
 ### Pilot gear
+```json
+  {
+    "name": "My Pilot Gear",
+    "type": "gear",
+    "description": "Fluff and/or mechanical effects of the gear.",
+    "tags": [
+      {
+        "id": "tg_gear"
+      },
+      {
+        "id": "tg_limited",
+        "val": 1
+      },
+      {
+        "id": "tg_full_action"
+      }
+    ],
+    "uses": 1
+  }
+```
+* **`name`**: The name of the pilot gear.
+* **`type`**: Gear must all have `gear` in this property. This type is for anything that isn't a weapon or armor.
+* **`description`**: **(Accepts HTML)** Fluff and/or mechanical effects for your gear.
+* **`tags`**: A list of the tags for the gear. Each tag begins with a `{` and ends with a `}`. For more information, see [On Equipment Tags](#on-equipment-tags).
+  * **`id`**: The identifying string for the tag. The tag id's for the Core book tags follow the format `tg_tag_name` - the name is converted to lower case, punctuation removed, and spaces replaced with `_`.
+  * **`val`** _(optional)_: For tags that take a value, like Reliable, this is the value that gets inserted into the tag name/description.
+* **`uses`**: The number of limited uses for the piece of gear. This is currently required, but may be made redundant in favor of using the Limited tag. Must be a number. (i.e. `1`, not `"1"` or `'1'`.)
+
 ### Pilot armor
+```json
+  {
+    "name": "My Pilot Armor",
+    "type": "armor",
+    "description": "Fluff and/or mechanical effects of the armor.",
+    "tags": [
+      {
+        "id": "tg_personal_armor"
+      }
+    ],
+    "hp_bonus": 3,
+    "armor": 1,
+    "evasion": 8,
+    "edef": 8,
+    "speed": 4
+  }
+```
+* **`name`**: The name of the pilot armor.
+* **`type`**: Armor must all have `armor` in this property.
+* **`description`**: **(Accepts HTML)** Fluff and/or mechanical effects for your armor.
+* **`tags`**: A list of the tags for the armor. Each tag begins with a `{` and ends with a `}`. All armor from the Core book has the `tg_personal_armor` tag, and homebrew is encouraged to follow this convention. Other tags may be included as well. For more information, see [On Equipment Tags](#on-equipment-tags).
+  * **`id`**: The identifying string for the tag. The tag id's for the Core book tags follow the format `tg_tag_name` - the name is converted to lower case, punctuation removed, and spaces replaced with `_`.
+  * **`val`** _(optional)_: For tags that take a value, like Reliable, this is the value that gets inserted into the tag name/description.
+* **`hp_bonus`**: The amount of bonus HP that the armor provides to the pilot. Should be a number with no quotes. (i.e. `3`, not `"3"` or `'3'`.)
+* **`armor`**: The pilot's Armor while wearing the armor. Should be a number with no quotes.
+* **`evasion`**: The pilot's Evasion while wearing the armor. Should be a number with no quotes.
+* **`edef`**: The pilot's E-Defense while wearing the armor. Should be a number with no quotes.
+* **`speed`**: The pilot's Speed while wearing the armor. Should be a number with no quotes.
+
 ### Pilot weapons
 ```json
-[
   {
     "name": "My Pilot Weapon",
     "type": "weapon",
     "description": "Fluff and/or mechanical effects of the weapon.",
     "tags": [
       {
-        "id": "tg_tag_id"
+        "id": "tg_loading"
       },
       {
-        "id": "tg_other_tag_id",
+        "id": "tg_reliable",
         "val": 1
       }
     ],
@@ -136,13 +198,12 @@ An array of objects containing each core bonus's data.
       }
     ]
   }
-]
 ```
 * **`name`**: The name of the pilot weapon.
 * **`type`**: Weapons must have `Weapon` in this property.
-* **`description`**: **(Accepts HTML)** Fluff and/or mechanical effects for your talent.
-* **`tags`**: A list of the tags for the weapon. Each tag begins with a `{` and ends with a `}`.
-  * **`id`**: The identifying string for the tag. The tag id's for the Core book tags follow the format `tg_tag_name` - the name is converted to lower case, punctuation removed, and spaces replaced with `_`.
+* **`description`**: **(Accepts HTML)** Fluff and/or mechanical effects for your weapon.
+* **`tags`**: A list of the tags for the weapon. Each tag begins with a `{` and ends with a `}`. For more information, see [On Equipment Tags](#on-equipment-tags).
+  * **`id`**: The identifying string for the tag.
   * **`val`** _(optional)_: For tags that take a value, like Reliable, this is the value that gets inserted into the tag name/description.
 * **`range`**: A list of the range types for the weapon. Each type begins with a `{` and ends with a `}`. The example above will render as having Range 5.
   * **`type`**: The type of range. Must be one of `Range`, `Threat`, `Line`, `Cone`, `Blast`, or `Burst`.
