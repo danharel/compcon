@@ -27,11 +27,12 @@ Due to web limitations, images in content packs (namely: your pack's main image,
 
 ## HORUS text
 Comp/Con has a few special text effects, mostly for HORUS-style flavor. You can include these in fields noted with **(Accepts HTML)** by wrapping the desired text with one of these sets of tags:
-```html
-<code class="horus">Blah blah blah</code>
-<span class="horus--subtle">Blah blah blah</span>
-<span class="ra-quiet">Blah blah blah</span>
 ```
+<code class=\"horus\">Blah blah blah</code>
+<span class=\"horus--subtle\">Blah blah blah</span>
+<span class=\"ra-quiet\">Blah blah blah</span>
+```
+The `"`s are escaped (`\"`) so that they are valid JSON.
 
 ## On Equipment Tags
 Every tag has an identifying string - an `id` - which can be applied to other items (frames, equipment, weapons, etc...). Any item which can have tags applied has a `tags` property.
