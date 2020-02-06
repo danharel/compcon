@@ -34,7 +34,7 @@ Comp/Con has a few special text effects, mostly for HORUS-style flavor. You can 
 ```
 
 ## On Equipment Tags
-Every tag has an identifying string - and `id` - which can be applied to other items (frames, equipment, weapons, etc...). Any item which can have tags applied has a `tags` property.
+Every tag has an identifying string - an `id` - which can be applied to other items (frames, equipment, weapons, etc...). Any item which can have tags applied has a `tags` property.
 
 The tag id's for the Core book tags follow the format `tg_tag_name` - the name is converted to lower case, punctuation removed, and spaces replaced with `_`. To see the id's of all tags from the core book, see [tags.json](https://github.com/massif-press/lancer-data/blob/master/lib/tags.json) in the lancer-data repo.
 
