@@ -255,5 +255,73 @@ All three kinds of pilot gear must be included together in the `pilot_gear.json`
 * **`description`**: **(Accepts HTML)** Mechanical effect of the tag. Again, `{VAL}` is optional and is treated the same as in `name`.
 
 ## NPC classes (`npc_classes.json`)
+```json
+[
+    {
+        "id": "my_npc",
+        "name": "MyNPC",
+        "role": "striker",
+        "info": {
+            "flavor": "Flavor text.",
+            "tactics": "How to use this NPC."
+        },
+        "base_features": [
+            "npc_base_feature_id_1",
+            "npc_base_feature_id_2"
+        ],
+        "optional_features": [
+            "npc_optional_feature_id_1",
+            "npc_optional_feature_id_2"
+        ],
+        "power": 100,
+        "stats": {
+            "activations": [1, 1, 1],
+            "stress": [1, 1, 1],
+            "structure": [1, 1, 1],
+            "hp": [12, 15, 18],
+            "armor": [0, 0, 0],
+            "evade": [8, 10, 12],
+            "edef": [8, 10, 12],
+            "heatcap": [6, 7, 8],
+            "hull": [1, 2, 3],
+            "agility": [1, 2, 3],
+            "systems": [1, 2, 3],
+            "engineering": [1, 2, 3],
+            "speed": [4, 5, 6],
+            "sensor": [10, 10, 10],
+            "save": [10, 12, 14],
+            "size": [[1], [1], [1]]
+        }
+    }
+]
+```
+
+* **`name`**: The name of the NPC class.
+* **`id`** _(optional)_: The ID that Comp/Con will use internally. If not specified, the importer will automatically generate an ID.
+* **`role`**: Which NPC role category / designation this NPC class generally belongs to. Accepted values are `"artillery"`, `"biological"`, `"controller"`, `"defender"`, `"striker"` and `"support"`.
+* **`info`**: General information about the NPC.
+  * **`flavor`**: **(Accepts HTML)** Flavor text to introduce the narrative style and role of the NPC in the Lancer universe.
+  * **`tactics`**: **(Accepts HTML)** Recommended tactics for GMs using this NPC in their encounters. 
+* **`base_features`**: A list of the of the base features that are included with this NPC. Must match the `id` property of the features. 
+* **`optional_features`**: A list of the of the optional features this NPC can always select. Must match the `id` property of the features.
+* **`power`**: A rough estimation of the combat power of this NPC at Tier 1. Used for combat analytic metrics. 100 is standard.
+* **`stats`**: A complete breakdown of the essential stats for this NPC. 
+  * **`activations`**: A list containing the number of times this NPC can be activated per round at each tier.
+  * **`stress`**: A list of the Stress of the NPC for each tier.
+  * **`structure`**: A list of the Structure of the NPC for each tier.
+  * **`hp`**: A list containing the number of Hit Points (HP) this NPC has at each tier.
+  * **`armor`**: A list containing the number of Armor points this NPC has at each tier.
+  * **`evade`**: A list containing the Evasion target number this NPC has at each tier.
+  * **`edef`**: A list containing E-Defense target number this NPC has at each tier.
+  * **`heatcap`**: A list containing the Heat Capacity of this NPC has at each tier.
+  * **`hull`**: A list containing the Hull stat for this NPC has at each tier.
+  * **`agility`**: A list containing the Agility stat for this NPC has at each tier.
+  * **`systems`**: A list containing the Systems stat for this NPC has at each tier.
+  * **`engineering`**: A list containing the Engineering stat for this NPC has at each tier.
+  * **`speed`**: A list containing the movement Speed of this NPC has at each tier.
+  * **`sensor`**: A list containing the Sensor Range of this NPC has at each tier.
+  * **`save`**: A list containing the Save Target number for this NPC has at each tier.
+  * **`size`**: A nested list of lists containing the size of this NPC has at each tier.
+
 ## NPC features (systems, traits, etc.) (`npc_features.json`)
 ## NPC templates (`npc_templates.json`)
