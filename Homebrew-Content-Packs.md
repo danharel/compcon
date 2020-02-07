@@ -199,7 +199,7 @@ Frames are the basis for all LANCER, and thus COMP/CON, licenses. With the excep
         * **`val`**: Value for associated tag
     * **`passive_name`**: _(optional)_ The name of the passive effect.
     * **`passive_effect`**: _(optional)_ **(Accepts HTML)** Mechanical description of what the passive effect does
-    * **`integrated`**: _(optional)_ If a CORE System has an Integrated weapon, this will be copied to all loadouts. Contains `id` tag for weapon, see [Weapons](#mech-weapons-weaponsjson) for details.
+    * **`integrated`**: _(optional)_ If a CORE System has an Integrated weapon, this will be copied to all loadouts. Contains `id` tag for weapon, see [Weapons](#mech-weapons-weaponsjson) for details. TODO: Add more detail on how integrated id's have to be specified.
 * **`data_type`**: Should only be set as 'frame'. Used internally in the app.
 * **`aptitude`**: Currently unused, leave empty.
 * **`counters`**: _(optional)_ stores data for the counter(s) used in the core systems of the mech.
@@ -270,6 +270,7 @@ Mech Weapons can be added to existing licenses, custom licenses, or the GMS base
   ...
 ]
 ```
+TODO: Talk about the id field, especially as it relates to integrated weapons.
 * **`name`**: The name of the Weapon.
 * **`mount`**: Weapon mount size, See below for [Weapon Mount](#weapon-mounts) details.
 * **`type`**: Type of weapon. See below for [Weapon Type](#weapon-types) details.
@@ -582,11 +583,13 @@ All three kinds of pilot gear must be included together in the `pilot_gear.json`
 ```json
 [
   {
+    "id": "my_tag_id"
     "name": "MY TAG {VAL}",
     "description": "Mechanical effects of the tag, which does {VAL} amount of something."
   }
 ]
 ```
+* **`id`** _(optional)_: The id for the tag that Comp/Con will use internally, which must be unique. If not supplied, Comp/Con will generate an id automatically. However, any equipment that uses the tag must specify it by id, so you may want to supply id's for your custom tags so that you know what they will be. For more information, see [On Equipment Tags](#on-equipment-tags).
 * **`name`**: The name of the tag. The `{VAL}` is optional, and is for tags like Reliable which have an associated value. In those cases, `{VAL}` gets replaced with the value of the tag.
 * **`description`**: **(Accepts HTML)** Mechanical effect of the tag. Again, `{VAL}` is optional and is treated the same as in `name`.
 
