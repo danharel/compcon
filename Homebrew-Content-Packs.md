@@ -583,7 +583,7 @@ All three kinds of pilot gear must be included together in the `pilot_gear.json`
 ```json
 [
   {
-    "id": "my_tag_id"
+    "id": "my_tag_id",
     "name": "MY TAG {VAL}",
     "description": "Mechanical effects of the tag, which does {VAL} amount of something."
   }
