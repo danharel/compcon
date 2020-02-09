@@ -1,7 +1,7 @@
 **_NOTE: THIS PAGE IS A WORK IN PROGRESS AND IS BEING REWRITTEN TO ACCOMODATE THE NEW V2 HOMEBREW STRUCTURE_**
 # Basics
 A UI-based homebrew editor is not yet available in COMP/CON, but you can already create homebrew content if you're willing to work with JSON.
-COMP/CON loads homebrew from `.LCP` (Lancer Content Pack) archives, which are actually just `.ZIP` files with their extension changed. It looks inside the archive for specific `.JSON` files which contain the actual data - every type of item has its own .json file, which contains an array of items. The archive **MUST** contain a [`lcp_manifest.json` file with its required contents](#manifest-lcp_manifestjson), which contains metadata for the package. The files it looks for data in are as follows - and they ⚠️**MUST BE NAMED AS FOLLOWING**⚠️, COMP/CON will *ignore any other files in the package*:
+COMP/CON loads homebrew from `.LCP` (Lancer Content Pack) archives, which are actually just `.ZIP` files with their extension changed. (If working on Mac without VSCode, see [Working on Mac](#working-on-mac).) It looks inside the archive for specific `.JSON` files which contain the actual data - every type of item has its own .json file, which contains an array of items. The archive **MUST** contain a [`lcp_manifest.json` file with its required contents](#manifest-lcp_manifestjson), which contains metadata for the package. The files it looks for data in are as follows - and they ⚠️**MUST BE NAMED AS FOLLOWING**⚠️, COMP/CON will *ignore any other files in the package*:
 
 * [`manufacturers.json` (Manufacturers)](#manufacturers-manufacturersjson)
 * [`core_bonus.json` (Core Bonuses)](#core-bonuses-core_bonusjson)
@@ -21,6 +21,9 @@ COMP/CON loads homebrew from `.LCP` (Lancer Content Pack) archives, which are ac
 To make creating homebrew content packs as easy as possible, you should use the [Visual Studio Code](https://code.visualstudio.com/) text editor combined with the [COMP/CON Content Authoring extension](https://marketplace.visualstudio.com/items?itemName=massif-press.comp-con-content-authoring). VSCode by default provides JSON syntax validation, and the extension provides COMP/CON specific data validation, autocomplete, and a task to rapidly create the .LCP archive from your source code.
 
 To use the extension, make sure you're working in an **EMPTY FOLDER**, create an `lcp_manifest.json` file inside of it, and fill out its required fields. The extension should activate once it detects the manifest file. To run the build task, first, if you're on Windows, make sure you have 7zip installed - Mac and Linux should work right away (uses `zip` tool). Press `Ctrl+Shift+P`, and search for `Tasks: Run Build Task`. You should see a `compcon: Build .LCP package` option - select it and your .LCP file should rapidly build itself.
+
+## Working on Mac
+If you are building .LCP's on Mac without using VS Code, note that the Mac file browser's zipping option will add an extra layer of folders inside the .ZIP, causing CompCon to not recognize the LCP. To get around this, either [use VS Code](#the-vscode-extension) or create the .ZIP using the command line `zip` tool.
 
 ## A note about images
 Due to web limitations, images in content packs (namely: your pack's main image, manufacturer logos, and frame images) can only be referenced via a URL for an image hosted on the Internet. Make sure the place where you choose to host your images will be around for a while.
