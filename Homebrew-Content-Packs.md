@@ -184,7 +184,7 @@ Frames are the basis for all LANCER, and thus COMP/CON, licenses. With the excep
 ]
 ```
 
-* **`source`**: The `logo` property of the manufacturer that provides the frame.
+* **`source`**: The `id` property of the manufacturer that provides the frame.
 * **`name`**: The name of the Frame, and the name of the License. Should be all caps.
 * **`mechtype`**: Very short description of the mech, base game tags include: Artillery, Balanced, Controller, Defender, Striker, Support.
 * **`y_pos`**: Y offset for frame portrait in Compendium -> Licences. 
@@ -299,7 +299,7 @@ TODO: Talk about the id field, especially as it relates to integrated weapons.
 * **`tags`**: A list of the tags for the weapon. For more information, see [On Equipment Tags](#on-equipment-tags).
   * **`id`**: The identifying string for the tag. The tag id's for the Core book tags follow the format `tg_tag_name` - the name is converted to lower case, punctuation removed, and spaces replaced with `_`.
   * **`val`** _(optional)_: For tags that take a value, like Reliable, this is the value that gets inserted into the tag name/description.
-* **`source`**: The `logo` property of the manufacturer that provides the core bonus. If `GMS`, it will be available without license requirements.
+* **`source`**: The `id` property of the manufacturer that provides the core bonus. If `GMS`, it will be available without license requirements.
 * **`license`**: The NAME of the frame /  license this weapon is associated with. Must match exactly.
 * **`license_level`**: Number from 1-3 for where the weapon exists within the license.
 * **`effect`**: **(Accepts HTML)** Mechanical description of what the active effect does.
@@ -377,7 +377,7 @@ The string must match exactly. valid types are:
 * **`tags`**: A list of the tags for the system. For more information, see [On Equipment Tags](#on-equipment-tags).
   * **`id`**: The identifying string for the tag. The tag id's for the Core book tags follow the format `tg_tag_name` - the name is converted to lower case, punctuation removed, and spaces replaced with `_`.
   * **`val`** _(optional)_: For tags that take a value, like Reliable, this is the value that gets inserted into the tag name/description.
-* **`source`**: The `logo` property of the manufacturer that provides the core bonus. If `GMS`, it will be available without license requirements.
+* **`source`**: The `id` property of the manufacturer that provides the core bonus. If `GMS`, it will be available without license requirements.
 * **`license`**: The NAME of the frame /  license this system is associated with. Must match exactly.
 * **`license_level`**: Number from 1-3 for where the weapon exists within the license.
 * **`effect`**: **(Accepts HTML)** Mechanical description of what the active effect does.
@@ -437,7 +437,7 @@ Mech Weapon Mods are essentially systems with a few additional properties so COM
 * **`sp`**: Cost of the mod in system points.
 * **`applied_to`**: What [weapon types](#weapon-types) can this mod be applied to.
 * **`applied_string`**: Flavour string for how the information from applied_to is conveyed. eg, "Melee, CQB, or Cannon". 
-* **`source`**: The `logo` property of the manufacturer that provides the core bonus. If `GMS`, it will be available without license requirements.
+* **`source`**: The `id` property of the manufacturer that provides the core bonus. If `GMS`, it will be available without license requirements.
 * **`license`**: The NAME of the frame /  license this weapon mod is associated with. Must match exactly.
 * **`license_level`**: Number from 1-3 for where the weapon exists within the license.
 * **`effect`**: **(Accepts HTML)** Mechanical description of what the active effect does.
