@@ -1,4 +1,3 @@
-**_NOTE: THIS PAGE IS A WORK IN PROGRESS AND IS BEING REWRITTEN TO ACCOMODATE THE NEW V2 HOMEBREW STRUCTURE_**
 # Basics
 A UI-based homebrew editor is not yet available in COMP/CON, but you can already create homebrew content if you're willing to work with JSON.
 COMP/CON loads homebrew from `.LCP` (Lancer Content Pack) archives, which are actually just `.ZIP` files with their extension changed. (If working on Mac without VSCode, see [Working on Mac](#working-on-mac).) It looks inside the archive for specific `.JSON` files which contain the actual data - every type of item has its own .json file, which contains an array of items. The archive **MUST** contain a [`lcp_manifest.json` file with its required contents](#manifest-lcp_manifestjson), which contains metadata for the package. The files it looks for data in are as follows - and they ⚠️**MUST BE NAMED AS FOLLOWING**⚠️, COMP/CON will *ignore any other files in the package*:
