@@ -119,6 +119,7 @@ Frames are the basis for all LANCER, and thus COMP/CON, licenses. With the excep
   "mechtype": [
     "Type"
   ],
+  "image_url": "https://example.com/image.png",
   "y_pos": "",
   "description": "My description of the Frame",
   "mounts": [
@@ -186,6 +187,7 @@ Frames are the basis for all LANCER, and thus COMP/CON, licenses. With the excep
 * **`source`**: The `id` property of the manufacturer that provides the frame.
 * **`name`**: The name of the Frame, and the name of the License. Should be all caps.
 * **`mechtype`**: Very short description of the mech, base game tags include: Artillery, Balanced, Controller, Defender, Striker, Support.
+* **`image_url`** _(optional)_: An external URL to an image representing your homebrew package. Optional, but recommended for recognizability.
 * **`y_pos`**: Y offset for frame portrait in Compendium -> Licences. 
 * **`description`**: **(Accepts HTML)** Fluff for your frame.
 * **`mounts`**: See below for [Mount](#mounts) details.
