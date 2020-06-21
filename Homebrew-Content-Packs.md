@@ -667,4 +667,81 @@ All three kinds of pilot gear must be included together in the `pilot_gear.json`
   * **`size`**: A nested list of lists containing the size of this NPC has at each tier.
 
 ## NPC features (systems, traits, etc.) (`npc_features.json`)
+The fields vary depending on whether you're designing a weapon, trait, system, or reaction
+### Weapon feature
+```json
+[
+    {
+        "id": "my_weapon",
+        "name": "MyWeapon",
+        "type": "weapon",
+        "weapon_type": "Main Melee",
+        "origin": {
+            "name": "MyNPC",
+            "type": "Class",
+            "base": true
+        },
+        "locked": false,
+        "effect": "The on-use effect of the weapon.",
+        "on_hit": "The on-hit effect of the weapon.",
+        "damage": [
+            {
+                "type": "Kinetic",
+                "damage": [4,6,8]
+            },
+            {
+              "type": "Burn",
+              "damage": [2,4,6],
+            }
+            ...
+        ],
+        "attack_bonus": [1,2,3],
+        "accuracy": [0,1,2],
+        "range": [
+            {
+                "type": "Threat",
+                "val": 2,
+                "override": false,
+                "bonus": 0
+            },
+            {
+                "type": "Line",
+                "val": 5,
+                "override": false,
+                "bonus": 0
+            },
+            ...
+        ]
+    }
+]
+```
+
+* **`name`**: The name of the NPC weapon.
+* **`id`**: The ID that Comp/Con will use internally. Used to assign this feature to an NPC class.
+* **`type`**: The type of NPC feature. Weapon features must use `"Weapon"`.
+* **`weapon_type`**: The type of weapon.
+* **`origin`**: How this feature is being used.
+  * **`name`**: Name of the source this feature came from. Usually this will be the name of the class it's used by.
+  * **`type`**: Type of the source this feature came from. Usually this wil be `"Class"`.
+  * **`base`**: `true` if this is a base feature, `false` if it's optional.
+* **`locked`**: TODO: find out what the `locked` field does.
+* **`effect`**: Additional information on this weapon.
+* **`on_hit`**: What happens when this weapon hits.
+* **`damage`**: List of types of damage that this weapon deals.
+  * **`type`**: Type of damage dealt by this attack. Accepted values are `"Kinetic"`, `"Energy"`, `"Explosive"`, `"Burn"`, and `"Heat"`.
+  * **`damage`**: List of damage dealt of this type dealt at each tier.
+* **`attack_bonus`**: List of attack bonus at each tier.
+* **`accuracy`**: List of accuracy at each tier.
+* **`range`**: List of ranges at which this weapon can be used.
+  * **`type`**: Type of range. Accepted values are `"Range"`, `"Threat"`, `"Thrown"`, `"Line"`, `"Cone"`, `"Blast"`, `"Burst"`. Any other value is considered to be `"Variable"`.
+  * **`val`**: Range value for this range.
+  * **`override`**: TODO: Figure out what the `override` field does.
+  * **`bonus`**: Bonus range added onto `val`.
+
+### Trait feature
+
+### System feature
+
+### Reaction feature
+
 ## NPC templates (`npc_templates.json`)
